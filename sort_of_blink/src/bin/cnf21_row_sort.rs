@@ -3,7 +3,6 @@
 
 use core::ptr::write_volatile;
 
-
 use cortex_m::asm::nop;
 use cortex_m_rt::entry;
 use panic_halt as _;
@@ -44,7 +43,6 @@ fn main() -> ! {
         }
     }
 }
-
 
 fn nopit(it: u32) {
     for _ in 0..it {
@@ -108,7 +106,6 @@ const ROWS_POS: [usize; 5] = [
     GPIO0_OUT_ROW4_POS,
     GPIO0_OUT_ROW5_POS,
 ];
-
 
 const GPIO0_PINNCNF21_ROW1_ADDR: *mut u32 = 0x5000_0754 as *mut u32;
 const GPIO0_PINNCNF21_ROW2_ADDR: *mut u32 = 0x5000_0758 as *mut u32;
