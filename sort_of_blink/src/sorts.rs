@@ -90,15 +90,6 @@ pub fn selection_sort(input: &mut [u32; N]) -> SortRecordingLinear {
     return sort_recording;
 }
 
-/* fn main() {
-    println!("{:?}", cycle_sort(&mut [3, 5, 1, 2, 4]));
-    println!("{:?}", bubble_sort(&mut [3, 5, 1, 2, 4]));
-    println!("{:?}", quick_sort(&mut [3, 5, 1, 2, 4]));
-    println!("{:?}", insertion_sort(&mut [3, 5, 1, 2, 4]));
-    println!("{:?}", selection_sort(&mut [3, 5, 1, 2, 4]));
-}
- */
-
 pub fn cycle_sort(input: &mut [u32; N]) -> SortRecordingLinearCycleSort {
     let mut sort_recording = SortRecordingLinearCycleSort::new();
     sort_recording.push(&input);
